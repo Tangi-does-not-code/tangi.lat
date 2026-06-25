@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grimório de Código - Tangi</title>
+    <style>
+   
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin: 0;
+            padding: 50px 20px;
+        }
+        
+    
+        h1 {
+            font-family: 'Georgia', serif;
+            color: #58a6ff;
+            text-shadow: 0 0 15px rgba(88, 166, 255, 0.6);
+            font-size: 2.8em;
+            margin-bottom: 5px;
+            text-transform: lowercase;
+        }
+        
+        h2 {
+            color: #8b949e;
+            font-size: 1.6em;
+            margin-top: 0;
+            font-weight: normal;
+        }
+        
+      
+        .tangi-tag {
+            color: #bc8cff;
+            font-weight: bold;
+            font-size: 1.4em;
+            margin-bottom: 50px;
+            text-shadow: 0 0 10px rgba(188, 140, 255, 0.4);
+        }
+
+   
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 20px;
+            max-width: 400px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #58a6ff;
+            box-shadow: 0 0 25px rgba(88, 166, 255, 0.3);
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 2px solid #21262d;
+        }
+
+       
+        .code-block {
+            background-color: #010409;
+            padding: 15px;
+            border-radius: 8px;
+            color: #79c0ff;
+            font-size: 0.9em;
+            text-align: left;
+            border: 1px solid #21262d;
+        }
+
+        .comment { color: #8b949e; font-style: italic; }
+        .keyword { color: #ff7b72; font-weight: bold; }
+        .string { color: #a5d6ff; }
+        .function { color: #d2a8ff; }
+    </style>
+</head>
+<body>
+
+    <h1>pedro henrique correia chaves</h1>
+    <h2>Mago da programação</h2>
+    <p class="tangi-tag">&lt; AKA tangi /&gt;</p>
+
+    <div class="container">
+        <div class="card">
+            <img src="image_073f1b.jpg" alt="Mago conjurando uma magia">
+            <div class="code-block">
+                <span class="comment"># Invocando a infraestrutura na nuvem</span><br>
+                <span class="keyword">import</span> cloudflare<br><br>
+                <span class="keyword">def</span> <span class="function">cast_deploy_spell</span>():<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> <span class="string">"Deploy no tangi.lat concluído com sucesso!"</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image_073f3a.jpg" alt="Mago observando seu orbe mágico">
+            <div class="code-block">
+                <span class="comment">// Ponderando o Orbe de Debugging</span><br>
+                <span class="keyword">while</span> (!dns_propagated) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">ponder_orb</span>(server_logs);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">await</span> coffee();<br>
+                }
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
